@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+    <title>HIIT Timer</title>
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A HIIT Timer for interval training"
+    />
+    <meta property="og:title" content="HIIT Timer" />
+    <meta
+      property="og:description"
+      content="a HIIT timer for intervl training"
+    />
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+   <div class="controls" id="controls" >
+     <input type="text" id="exercise" value="" />
+      <label for="exercise"> Exercise name </label>
+      <input type="text" id="intervalTime" value="" />
+      <label for="intervalTime">Training time (In seconds) </label>
+      <button id="settings">Update</button>
+      
+    </div>
+  
+         
+    <div id = "display">
+      <div id = "listOfExer"></div>
+       <div class="large" id = "idDisplayTime"><span id="displayTime"></span></div>
+        <div class="large"><span id="displayExer"></span></div>
+       
+    </div>
+     
+  <div id = "Sp">
+    <button id="start">Start</button>
+    <button id="pause">Pause</button>
+    </div>
+
+  </body>
+</html>
